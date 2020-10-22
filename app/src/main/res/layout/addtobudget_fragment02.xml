@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:gravity="center_horizontal"
+    android:background="@drawable/signin_background">
+
+    <Spinner
+        android:id="@+id/FamilySpinner"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:entries="@array/SpinnerIndividual"
+        android:gravity="center_vertical"
+        android:paddingLeft="120dp"
+        android:background="@drawable/my_button01"/>
+
+
+    <EditText
+        android:id="@+id/txtFamilyAmount"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/amount"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHint="@color/cardview_dark_background"
+        android:background="@drawable/my_button01"/>
+
+    <EditText
+        android:id="@+id/txtFamilyDate"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/date"
+        android:inputType="date"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHint="@color/cardview_dark_background"
+        android:background="@drawable/my_button01"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/AddFamilyExpenseBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/my_button"
+        android:text="Add" />
+
+
+
+
+</LinearLayout>

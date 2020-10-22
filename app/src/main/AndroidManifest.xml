@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.budgetapplication">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/my_button"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BudgetCharts"></activity>
+        <activity android:name=".BudgetHistory" />
+        <activity android:name=".EventBudgetLineChart" />
+        <activity android:name=".FamilyBudgetLineChart" />
+        <activity android:name=".IndividualBudgetLineChart" />
+        <activity android:name=".EventOtherListView" />
+        <activity android:name=".EventFarewellListView" />
+        <activity android:name=".EventReunionListView" />
+        <activity android:name=".IndividualBudgetHistoryListView" />
+        <activity
+            android:name=".EventOther"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventFarewell"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventReunion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventBirthday"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventCardView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddToBudgetTab"
+            android:label="@string/title_activity_add_to_budget_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewExpense"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".View_Income"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".BudgetHistoryListView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddIncome"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".eventListView"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".familyListView"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".IndividualListView"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Reminder"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Expenses"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Income"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Family"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name=".Individual1"
+            android:label="@string/title_activity_Individual"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+        <activity
+            android:name=".Firstdisplay"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+        </activity>
+
+        <activity
+            android:name=".SignupActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".AlarmMainActivity">
+
+        </activity>
+
+        <activity android:name=".AddReminderActivity"
+            android:label="@string/title_activity_add_reminder"
+            android:parentActivityName=".AlarmMainActivity"
+            android:theme="@style/AppTheme">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlarmMainActivity"
+                />
+        </activity>
+        <provider
+            android:name=".data.AlarmReminderProvider"
+            android:authorities="com.delaroystudios.alarmreminder"
+            android:exported="false" />
+
+        <service
+            android:name=".reminder.ReminderAlarmService"
+            android:exported="false" />
+
+
+
+    </application>
+
+</manifest>

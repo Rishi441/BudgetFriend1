@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Individual1"
+    android:background="@drawable/signin_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+
+    <EditText
+        android:id="@+id/Amount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/EnterAmount"
+        android:textColor="#FAF9F9"
+        android:textColorHint="#514A4A"
+        android:inputType="number" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxFood"
+            android:layout_marginTop="60dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/food"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxHomeR"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="60dp"
+            android:text="@string/home_repair"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxTransport"
+            android:layout_marginTop="95dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/transport"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxVehicleM"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="95dp"
+            android:text="@string/vehicle_maintain"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxEducation"
+            android:layout_marginTop="130dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/education"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxEntertainment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:text="@string/entertainment"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxClothing"
+            android:layout_marginTop="165dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/clothing"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxTobacco"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="165dp"
+            android:text="@string/tobacco_alchohol"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxHealth"
+            android:layout_marginTop="200dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/healthcare"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxSports"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="@string/sports_other"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxGlossaries"
+            android:layout_marginTop="235dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/glossaries"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxSaloonService"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="235dp"
+            android:text="@string/saloon_service"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxUtility"
+            android:layout_marginTop="270dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/utility_bills"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxMagazines"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:text="@string/magazines"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxRent"
+            android:layout_marginTop="305dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/rent"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxOccasions"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="305dp"
+            android:text="@string/occasions"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxProperty"
+            android:layout_marginTop="340dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/property_tax"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxDonations"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:text="@string/donations"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/checkBoxVacation"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="375dp"
+            android:text="@string/vacation"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxVehicleIn"
+            android:layout_marginTop="375dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_insurance"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxLoan"
+            android:layout_marginTop="410dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_payment"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxInsurance"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="410dp"
+            android:text="@string/insurance"
+            android:textColor="#FB8C00"
+            android:buttonTint="#FAF9F9"
+            android:onClick="selectItem"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="480dp"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Add"
+            android:background="@drawable/my_button"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/individualcancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:text="@string/Cancel"
+            android:background="@drawable/my_button01" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
